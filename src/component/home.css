@@ -1,0 +1,22 @@
+ul {
+  list-style-type: none;
+  width: 100%;
+}
+.litag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  float: right;
+}
+.mainDiv {
+  background-image: url("https://wallpaperaccess.com/full/2314983.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+}
