@@ -9,23 +9,50 @@ const Profile = () => {
         <div className="mainDiv">
             <Navbar />
             <div className="sidebar">
-                <h4>My Profile</h4>
                 <ul className="profile-ul">
-                    <AiOutlineClockCircle /> <li>Dasboard</li>
-                    <AiOutlineUser />
-                    <li>Profile</li>
-                    <AiOutlineTable />
-                    <li>Basic table</li>
-                    <ImTextColor />
-                    <li>Icons</li>
-                    <FaGlobeAsia />
-                    <li>Google Mop</li>
-                    <AiOutlineFileText />
-                    <li>Blank Page </li>
-                    <RiErrorWarningLine />
-                    <li>Error 404</li>
-                    <button>Upgrade To pro</button>
+                    <h4>Admin</h4>
+                    <div className="sidebaar-section">
+                        <div><AiOutlineClockCircle /></div>
+                        <div>   <li>Dasboard</li></div>
+                    </div>
+                    <div className="sidebaar-section">
+                        <div>   <AiOutlineUser /></div>
+                        <div>  <li>Profile</li></div>
+                    </div>
+                    <div className="sidebaar-section">
+                        <div>  <AiOutlineTable /></div>
+                        <div>   <li>Basic table</li></div>
+                    </div>
+                    <div className="sidebaar-section">
+                        <div>    <ImTextColor /></div>
+                        <div>   <li>Icons</li></div>
+                    </div>
+                    <div className="sidebaar-section">
+                        <div>    <FaGlobeAsia /></div>
+                        <div>   <li>Google Mop</li></div>
+                    </div>
+                    <div className="sidebaar-section">
+                        <div>  <AiOutlineFileText /></div>
+                        <div>  <li>Blank Page </li></div>
+                    </div>
+                    <div className="sidebaar-section">
+                        <div>  <RiErrorWarningLine /></div>
+                        <div>     <li>Error 404</li></div>
+                    </div>
                 </ul>
+            </div>
+            <div>
+
+                <div>
+                    <ul>
+                        <li>home</li>
+                        <li>Profile</li>
+                    </ul>
+                    <div>
+                        <button>Upgrade To Pro</button>
+                    </div>
+                </div>
+                <div></div>
             </div>
         </div>
     </>

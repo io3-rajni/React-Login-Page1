@@ -1,10 +1,16 @@
 import Navbar from "./Navbar"
+import { useNavigate } from "react-router-dom";
 import "./signin.css"
 import { FaUserAlt, FaLock, FaInstagram, FaFacebookSquare, FaTwitter } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
+import { useState } from "react";
 
 import "./signin.css"
 const Signin = () => {
+    const [email, emailSet] = useState("");
+    const [password, passwordSet] = useState("");
+
+    const Navigate = { useNavigate }
     return <>
         <div className="mainDiv">
             <Navbar />
@@ -23,7 +29,11 @@ const Signin = () => {
                         }}
                         width="10rem"
                         color="white" />
-                    <input type="text" value="" placeholder="Enter User Name" className="user-name" />
+                    <input type="text" name="email" placeholder="Enter User Email" className="user-name" autoComplete="on"
+                        value={email}
+                        onChange={(storedata) => emailSet(storedata.target.value)}
+                    />
+
                 </div>
                 <div className="password">
                     <FaLock className="icon"
@@ -39,9 +49,11 @@ const Signin = () => {
                         }}
                         width="10rem"
                         color="white" />
-                    <input type="password" value="" placeholder="Password" className="pswrd" />
+                    <input type="password" name="password" placeholder="Password" className="pswrd" value={password} autoComplete="on" />
                 </div>
-                <button className="signin-btn">LOG IN NOW
+                <button className="signin-btn" >
+
+                    LOG IN
                 </button>
                 <IoIosArrowDropright className="icon"
                     style={{
@@ -59,7 +71,7 @@ const Signin = () => {
                 />
                 <div className="font-icon">
                     <br />
-                    <h5>Log In Via</h5>
+                    <h5 onClick={() => Navigate('/home')}>Log In Via</h5>
                     <div className="social-med-icon">
                         <FaInstagram /><FaFacebookSquare /><FaTwitter />
                     </div>
