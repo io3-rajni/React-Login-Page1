@@ -1,13 +1,12 @@
 import Navbar from "./Navbar"
 import { useNavigate } from "react-router-dom";
-import "./signin.css"
+import "./SignIn.css"
 import { FaUserAlt, FaLock, FaInstagram, FaFacebookSquare, FaTwitter } from "react-icons/fa";
 import { IoIosArrowDropright } from "react-icons/io";
 import { useState } from "react";
-import "./signin.css"
 const Signin = () => {
     const emailRegex = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
-    const navigate = useNavigate()6
+    const navigate = useNavigate()
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [newentry, setAllEntry] = useState([]);
